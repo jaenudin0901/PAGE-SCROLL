@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Scroll Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <span class="skewed"></span>
+    </section>
+    <div class="text">
+        <h1>I am Jaenudin</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, cum sint. Corporis autem qui quas impedit expedita
+            culpa enim praesentium temporibus quisquam aspernatur voluptas quia itaque, ipsum alias nemo fugiat harum a modi
+            quod eligendi molestias. Assumenda, nisi asperiores inventore accusantium saepe sed perferendis voluptatum deleniti
+            illum similique unde minima iure velit exercitationem tempore illo rerum, voluptates ab, quas delectus maiores. Id
+            sapiente fugit temporibus nostrum, sequi dolorum quia nobis perferendis voluptate, debitis odio ea? Hic quod quos
+            culpa modi aspernatur eum. Officia aspernatur ut minima accusantium atque pariatur error magnam cum, illum
+            distinctio deserunt veniam autem rerum provident assumenda.</p>
+    </div>
+    <script>
+        var skewed = document.querySelector('.skewed');
+        window.addEventListener('scroll', function(){
+            var value = -10 + window.scrollY/60;
+            skewed.style.transform = "skewY(" + value + "deg)"
+        })
+    </script>
+    
+</body>
+</html>
